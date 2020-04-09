@@ -1,0 +1,216 @@
+"","Lake","code","Longitude","Latitude","Region","Year"
+"1","Flood Plain Pond near Pipeline","Brdb-SA_FldPlPnP",-68.61903333,-17.3261,"Desaguadero-SAltiplano",2001
+"2","Huancaroma Dairy","Brdb-SA_HncrmDry1",-67.48318333,-17.666,"Desaguadero-SAltiplano",2001
+"3","Huancaroma Dairy","Brdb-SA_HncrmDry2",-67.48108333,-17.66081667,"Desaguadero-SAltiplano",2001
+"4","Laguna Chairiri","Brdb-SA_LagnChrr",-67.64608333,-22.52805,"Desaguadero-SAltiplano",2001
+"5","Laguna Blanca S.  Rio Jalsuri Uma","Brdb-SA_LgBS.RJU1",-68.54858333,-17.46771667,"Desaguadero-SAltiplano",2001
+"6","Laguna Desaguadero","Brdb-SA_LgnDsgdr",-68.78646667,-16.98438333,"Desaguadero-SAltiplano",2001
+"7","Laguna Soledad (Uru Uru)","Brdb-SA_LgS(UUr)2",-67.30683333,-17.74518333,"Desaguadero-SAltiplano",2001
+"8","N Lago Poopo plain","Brdb-SA_NLgPppln1",-66.95296667,-18.56863333,"Desaguadero-SAltiplano",2001
+"9","Rio Desaguadero Bridge (pipeline)","Brdb-SA_RDB(ppl)",-68.61775,-17.3132,"Desaguadero-SAltiplano",2001
+"10","Rio Desaguadero","Brdb-SA_RDesagdr1",-67.04055,-18.35068333,"Desaguadero-SAltiplano",2001
+"11","Rio Desaguadero at Parco Khota","Brdb-SA_RDsgdaPK",-68.67813333,-17.21141667,"Desaguadero-SAltiplano",2001
+"12","Rio Desaguadero: downstream from Desaguadero","Brdb-SA_RDsg:dfD",-68.96798333,-16.64406667,"Desaguadero-SAltiplano",2001
+"13","Rio Desaguadero Balsa Crossing","Brdb-SA_RDsgdrBC1",-67.0862,-18.19896667,"Desaguadero-SAltiplano",2001
+"14","Rio Desaguadero: Nazacara N.","Brdb-SA_RDsg:NN.",-68.79683333,-16.8787,"Desaguadero-SAltiplano",2001
+"15","Rio Desaguadero: Poopo (town)","Brdb-SA_RDsg:P()",-67.04775,-18.3736,"Desaguadero-SAltiplano",2001
+"16","Road tracks & N Lago Poopo plain","Brdb-SA_Rdt&NLPp",-66.9962,-18.55251667,"Desaguadero-SAltiplano",2001
+"17","Rio Mauri","Brdb-SA_RioMauri",-68.63476667,-17.29288333,"Desaguadero-SAltiplano",2001
+"18","Rio Poopo drainage","Brdb-SA_RPopdrng",-67.01645,-18.3827,"Desaguadero-SAltiplano",2001
+"19","Rio Quebrada Huajra Uma","Brdb-SA_RQbrdHjU",-68.42196667,-17.50253333,"Desaguadero-SAltiplano",2001
+"20","Salcro Tarquiamaya","Brdb-SA_SlcrTrqm",-68.58638333,-17.47948333,"Desaguadero-SAltiplano",2001
+"21","Acopia","Bush-Gd_Acopia",-71.52088611,-14.08415833,"Peruvian Andes",2009
+"22","Huamanmarca","Bush-Gd_Huamnmrc",-72.37284167,-13.031125,"Peruvian Andes",2009
+"23","Miski","Bush-Gd_Miski",-72.37284167,-13.031125,"Peruvian Andes",2009
+"24","Pacucha","Bush-Gd_Pacucha",-73.31976389,-13.61605278,"Peruvian Andes",2009
+"25","Chepical","Chl-Crr_Chepical",-70.4972,-32.2571,"Chile-Andean",2013
+"26","Laguna Copín","Chl-Crr_LagunCpn",-70.558,-32.6,"Chile-Andean",2013
+"27","Laguna de Teno","Chl-Crr_LagundTn",-70.549,-35.177,"Chile-Andean",2013
+"28","Laguna Negra-Chile","Chl-Crr_LagunNgr",-70.125,-33.648,"Chile-Andean",2013
+"29","Laguna Ocho","Chl-Crr_LagunOch",-70.317,-34.0299,"Chile-Andean",2013
+"30","Laguna Canchuca","Chl-Crr_LgnCnchc",-70.585,-32.087,"Chile-Andean",2013
+"31","Laguna del Inca","Chl-Crr_LgndlInc",-70.133,-32.822,"Chile-Andean",2013
+"32","Belmira","Clm-A-C_Belmir-1",-75.64,6.62,"Colombia-Andes",2013
+"33","Belmira","Clm-A-C_Belmir-2",-75.64,6.62,"Colombia-Andes",2013
+"34","Belmira","Clm-A-C_Belmir-3",-75.64,6.62,"Colombia-Andes",2013
+"35","Guarne","Clm-A-C_Guarne-1",-75.52,6.27,"Colombia-Andes",2001
+"36","Guarne","Clm-A-C_Guarne-2",-75.52,6.27,"Colombia-Andes",2001
+"37","Cucunoba","Clm-A-E_Cucunb-1",-73.78,5.28,"Colombia-Andes",2001
+"38","Cucunoba","Clm-A-E_Cucunb-2",-73.78,5.28,"Colombia-Andes",2001
+"39","Fuquene","Clm-A-E_Fuquen-1",-73.752,5.466,"Colombia-Andes",2001
+"40","Fuquene","Clm-A-E_Fuquen-2",-73.752,5.466,"Colombia-Andes",2001
+"41","Fuquene","Clm-A-E_Fuquen-3",-73.752,5.466,"Colombia-Andes",2001
+"42","Fuquene","Clm-A-E_Fuquen-4",-73.752,5.466,"Colombia-Andes",2001
+"43","Guatavita","Clm-A-E_Guatvt-1",-73.775,4.977,"Colombia-Andes",2001
+"44","Guatavita","Clm-A-E_Guatvt-2",-73.775,4.977,"Colombia-Andes",2001
+"45","Herrera","Clm-A-E_Herrer-1",-74.27,4.69,"Colombia-Andes",2001
+"46","Herrera","Clm-A-E_Herrer-2",-74.27,4.69,"Colombia-Andes",2001
+"47","Suesca","Clm-A-E_Suesca-1",-73.78,5.18,"Colombia-Andes",2001
+"48","Suesca","Clm-A-E_Suesca-2",-73.78,5.18,"Colombia-Andes",2001
+"49","Ubaque","Clm-A-E_Ubaqu-10",-73.93,4.5,"Colombia-Andes",2014
+"50","Ubaque","Clm-A-E_Ubaqu-11",-73.93,4.5,"Colombia-Andes",2014
+"51","Ubaque","Clm-A-E_Ubaqu-12",-73.93,4.5,"Colombia-Andes",2014
+"52","Ubaque","Clm-A-E_Ubaque-1",-73.93,4.5,"Colombia-Andes",2014
+"53","Ubaque","Clm-A-E_Ubaque-2",-73.93,4.5,"Colombia-Andes",2014
+"54","Ubaque","Clm-A-E_Ubaque-3",-73.93,4.5,"Colombia-Andes",2014
+"55","Ubaque","Clm-A-E_Ubaque-4",-73.93,4.5,"Colombia-Andes",2014
+"56","Ubaque","Clm-A-E_Ubaque-5",-73.93,4.5,"Colombia-Andes",2014
+"57","Ubaque","Clm-A-E_Ubaque-6",-73.93,4.5,"Colombia-Andes",2014
+"58","Ubaque","Clm-A-E_Ubaque-7",-73.93,4.5,"Colombia-Andes",2014
+"59","Ubaque","Clm-A-E_Ubaque-8",-73.93,4.5,"Colombia-Andes",2014
+"60","Ubaque","Clm-A-E_Ubaque-9",-73.93,4.5,"Colombia-Andes",2014
+"61","Verjon","Clm-A-E_Verjon-1",-74.02,4.56,"Colombia-Andes",2001
+"62","Verjon","Clm-A-E_Verjon-2",-74.02,4.56,"Colombia-Andes",2001
+"63","Verjon","Clm-A-E_Verjon-3",-74.02,4.56,"Colombia-Andes",2001
+"64","Laguna Challacaba","Cochbmb_LgnChllc",-65.569444,-17.597222,"Desaguadero-SAltiplano",2007
+"65","Cusco-PLS-10","Cusco_C-PLS-10",-70.93598,-15.08645,"Cusco",2011
+"66","Cusco-PLS-11","Cusco_C-PLS-11",-71.72103,-13.62051,"Cusco",2011
+"67","Cusco-PLS-12","Cusco_C-PLS-12",-71.463,-14.12512,"Cusco",2011
+"68","Cusco-PLS-13","Cusco_C-PLS-13",-71.6932,-13.40322,"Cusco",2011
+"69","Cusco-PLS-1","Cusco_Cs-PLS-1",-72.04578,-13.41602,"Cusco",2011
+"70","Cusco-PLS-2","Cusco_Cs-PLS-2",-72.12657,-13.39754,"Cusco",2011
+"71","Cusco-PLS-3","Cusco_Cs-PLS-3",-71.72196,-14.58489,"Cusco",2011
+"72","Cusco-PLS-4","Cusco_Cs-PLS-4",-71.70603,-14.59023,"Cusco",2011
+"73","Cusco-PLS-5","Cusco_Cs-PLS-5",-70.25166,-13.86321,"Cusco",2011
+"74","Cusco-PLS-6","Cusco_Cs-PLS-6",-70.31148,-13.92911,"Cusco",2011
+"75","Cusco-PLS-7","Cusco_Cs-PLS-7",-70.3072,-13.86333,"Cusco",2011
+"76","Cusco-PLS-8","Cusco_Cs-PLS-8",-70.30087,-13.90595,"Cusco",2011
+"77","Cusco-PLS-9","Cusco_Cs-PLS-9",-70.49856,-14.72749,"Cusco",2011
+"78","Cusco-CH1","Cusco_Cusc-CH1",-70.86565,-13.91556,"Cusco",2011
+"79","Cusco-DP1","Cusco_Cusc-DP1",-70.90269,-13.94436,"Cusco",2011
+"80","Cusco-IA1","Cusco_Cusc-IA1",-70.90091,-13.9481,"Cusco",2011
+"81","Cusco-YC1","Cusco_Cusc-YC1",-70.87478,-13.94529,"Cusco",2011
+"82","Caricocha","EpNGEO-F_Caricoch",-78.266149,0.137846,"Ecuador-Andean",2017
+"83","Chiriacu","EpNGEO-F_Chiriacu1",-78.273,0.114,"Ecuador-Andean",2017
+"84","Cubilche","EpNGEO-F_Cubilche1",-78.134,0.232,"Ecuador-Andean",2017
+"85","Cuicocha","EpNGEO-F_Cuicocha1",-78.36666667,0.3,"Ecuador-Andean",2017
+"86","Cunrro","EpNGEO-F_Cunrro1",-78.089,0.235,"Ecuador-Interandean",2017
+"87","Huarmicocha","EpNGEO-F_Huarmcch1",-78.254,0.129,"Ecuador-Andean",2017
+"88","San Pablo","EpNGEO-F_SanPablo",-78.233,0.2166,"Ecuador-Interandean",2017
+"89","Yahuarcocha","EpNGEO-F_Yahurcch",-78.10163467,0.371130241,"Ecuador-Interandean",2017
+"90","Yambo","EpNGEO-F_Yambo1",-78.586,-1.104,"Ecuador-Interandean",2017
+"91","Yanacocha","EpNGEO-F_Yanacoch1",-78.251,0.124,"Ecuador-Andean",2017
+"92","Colta-2","EpNGEO-J_Colta-22",-78.759,-1.727,"Ecuador-Interandean",2017
+"93","Dos Chorreras","EpNGEO-J_DsChrrrs1",-79.159722,-2.770278,"Ecuador-Andean",2017
+"94","Estrellascocha","EpNGEO-J_Estrllsc1",-79.25378188,-2.9133061,"Ecuador-Andean",2017
+"95","Fondococha","EpNGEO-J_Fondocch1",-79.23635015,-2.759813487,"Ecuador-Andean",2017
+"96","Jigeno","EpNGEO-J_Jigeno1",-79.292,-2.9118,"Ecuador-Andean",2017
+"97","Kuyuk","EpNGEO-J_Kuyuk1",-78.5,-2.18,"Ecuador-Andean",2017
+"98","Llaviucu","EpNGEO-J_Llaviucu",-79.146,-2.8429,"Ecuador-Andean",2017
+"99","Marmolcocha","EpNGEO-J_Marmlcch1",-79.219,-2.781,"Ecuador-Andean",2017
+"100","Laguna Cachi","Frt-SAA_LagunCch",-67.945011,-21.730115,"Sud Lipez",1991
+"101","Salar de Uyuni","Frt-SAA_SalrdUyn1",-67.66479,-20.14363,"Sud Lipez",1991
+"102","Asiruni","GslngBA_Asiruni",-70.37051667,-16.38546667,"Peruvian Andes",2003
+"103","Calzada","GslngBA_Calzada",-70.51196667,-15.90268333,"Peruvian Andes",2003
+"104","Chacas","GslngBA_Chacas",-70.20376667,-15.40938333,"Peruvian Andes",2003
+"105","Chara Nkkota","GslngBA_CharNkkt",-68.15618333,-16.57995,"Peruvian Andes",2003
+"106","Estrellani","GslngBA_Estrelln",-68.0426,-16.33795,"Peruvian Andes",2003
+"107","Jacumarini","GslngBA_Jacumarn",-70.39303333,-16.36296667,"Peruvian Andes",2003
+"108","Jachcha Kkota","GslngBA_JchchKkt",-68.16758333,-16.5782,"Peruvian Andes",2003
+"109","Khara Kkota (north)","GslngBA_KK(nrth)",-68.3617,-16.1327,"Peruvian Andes",2003
+"110","Lagunillas","GslngBA_Lagunlls",-70.6765,-15.74625,"Peruvian Andes",2003
+"111","Laja","GslngBA_Laja",-68.39031667,-16.52876667,"Peruvian Andes",2003
+"112","Lake 23","GslngBA_Lake 23",-68.31545,-16.67815,"Peruvian Andes",2003
+"113","Lake 27","GslngBA_Lake 27",-68.27481667,-16.62463333,"Peruvian Andes",2003
+"114","Lake 34","GslngBA_Lake 34",-68.95038333,-16.9146,"Peruvian Andes",2003
+"115","Lake 6","GslngBA_Lake 6",-70.19568333,-15.65503333,"Peruvian Andes",2003
+"116","Maquera","GslngBA_Maquera",-70.56458333,-15.88223333,"Peruvian Andes",2003
+"117","Pacuna","GslngBA_Pacuna",-70.20845,-15.57516667,"Peruvian Andes",2003
+"118","Sara Cocha","GslngBA_SaraCoch",-70.61478333,-15.77695,"Peruvian Andes",2003
+"119","Ululumasa","GslngBA_Ululumas",-70.6001,-15.78345,"Peruvian Andes",2003
+"120","Umapata","GslngBA_Umapata",-70.04575,-15.53651667,"Peruvian Andes",2003
+"121","Huagapo Cave, inside","JunnPln_HgpCv,in",-75.787169,-11.268183,"JuninPlain",1999
+"122","Huagapo Cave, outside","JunnPln_HgpCv,ot",-75.787169,-11.268183,"JuninPlain",1999
+"123","Junin 11, Gunoc Km 255","JunnPln_J11,GK251",-76.04598333,-10.943925,"JuninPlain",1999
+"124","Junin 11, Gunoc Km 255","JunnPln_J11,GK252",-76.04598333,-10.943925,"JuninPlain",1999
+"125","Junin 11, Gunoc Km 255","JunnPln_J11,GK253",-76.04598333,-10.943925,"JuninPlain",1999
+"126","Junin 13, Qda. Anascanchi","JunnPln_J13,Qd.A1",-76.03618667,-10.97911667,"JuninPlain",1999
+"127","Junin 10, Tambo del Sol","JunnPln_Jn10,TdS1",-76.1337,-10.80961333,"JuninPlain",1999
+"128","Junin 10, Tambo del Sol","JunnPln_Jn10,TdS2",-76.1337,-10.80961333,"JuninPlain",1999
+"129","Junin 14, Palcamayo R.","JunnPln_Jn14,PR.1",-76.0468,-10.91474722,"JuninPlain",1999
+"130","Junin 7, San Pedro de Pari","JunnPln_Jn7,SPdP1",-76.23076944,-10.963775,"JuninPlain",1999
+"131","Junin 12, Chacpas","JunnPln_Jnn12,Ch1",-76.01002333,-11.00235833,"JuninPlain",1999
+"132","Junin 1, Chacachimpa R.","JunnPln_Jnn1,CR.1",-76.0174,-11.16535,"JuninPlain",1999
+"133","Junin 2, Warmipuquio spring","JunnPln_Jnn2,Wrs1",-76.090863,-11.113117,"JuninPlain",1999
+"134","Junin 2, Warmipuquio spring","JunnPln_Jnn2,Wrs2",-76.090863,-11.113117,"JuninPlain",1999
+"135","Junin 2, Warmipuquio spring","JunnPln_Jnn2,Wrs3",-76.090863,-11.113117,"JuninPlain",1999
+"136","Junin 3, spring 2","JunnPln_Jnn3,sp21",-76.086351,-11.124276,"JuninPlain",1999
+"137","Junin 4, Ondores spring","JunnPln_Jnn4,Ons1",-76.14765556,-11.08169722,"JuninPlain",1999
+"138","Junin 4, Ondores spring","JunnPln_Jnn4,Ons2",-76.14765556,-11.08169722,"JuninPlain",1999
+"139","Junin 5, Conoc spring","JunnPln_Jnn5,Cns1",-76.15787333,-11.055655,"JuninPlain",1999
+"140","Junin 5, Conoc spring","JunnPln_Jnn5,Cns2",-76.15787333,-11.055655,"JuninPlain",1999
+"141","Junin 6, Chuchucancha R.","JunnPln_Jnn6,CR.1",-76.187925,-11.041975,"JuninPlain",1999
+"142","Junin 6, Chuchucancha R.","JunnPln_Jnn6,CR.2",-76.187925,-11.041975,"JuninPlain",1999
+"143","Junin 8, Upamayo Bridge","JunnPln_Jnn8,UpB1",-76.262678,-10.92124,"JuninPlain",1999
+"144","Junin 8, Upamayo Bridge","JunnPln_Jnn8,UpB2",-76.262678,-10.92124,"JuninPlain",1999
+"145","Junin 9, ditch before Shelby","JunnPln_Jnn9,dbS1",-76.23,-10.814689,"JuninPlain",1999
+"146","Junin 9, ditch before Shelby","JunnPln_Jnn9,dbS2",-76.23,-10.814689,"JuninPlain",1999
+"147","L. Alcacocha, shore","JunnPln_L.Alcc,s3",-75.935,-11.08366667,"JuninPlain",1999
+"148","L. Ccochachuycho, shore","JunnPln_L.Ccch,s",-76.07207333,-10.75967,"JuninPlain",1999
+"149","L. Junin, center","JunnPln_L.Jnn,cn1",-76.06238333,-10.99626667,"JuninPlain",1999
+"150","L. Junin, center","JunnPln_L.Jnn,cn4",-76.06238333,-10.99626667,"JuninPlain",1999
+"151","L. Junin, shore","JunnPln_L.Jnn,sh3",-76.15588333,-11.05813167,"JuninPlain",1999
+"152","L. Junin, shore","JunnPln_L.Jnn,sh4",-76.15588333,-11.05813167,"JuninPlain",1999
+"153","L. Lulicocha, shore","JunnPln_L.Llcc,s1",-76.09690333,-10.77762667,"JuninPlain",1999
+"154","L. Lulicocha, shore","JunnPln_L.Llcc,s2",-76.09690333,-10.77762667,"JuninPlain",1999
+"155","L. Paca, 12m deep","JunnPln_L.Pc,12d1",-75.507378,-11.729454,"JuninPlain",1999
+"156","L. Paca, inflow stream","JunnPln_L.Pc,ins1",-75.506931,-11.716983,"JuninPlain",1999
+"157","L. Paca, inflow stream","JunnPln_L.Pc,ins2",-75.506931,-11.716983,"JuninPlain",1999
+"158","L. Purun, center","JunnPln_L.Prn,cn",-76.45986667,-10.83525,"JuninPlain",1999
+"159","L. Purun, shore","JunnPln_L.Prn,sh1",-76.45425,-10.8361,"JuninPlain",1999
+"160","L. Purun, shore","JunnPln_L.Prn,sh2",-76.45425,-10.8361,"JuninPlain",1999
+"161","L. Tauli, shore","JunnPln_L.Tl,shr2",-76.07055556,-10.72361111,"JuninPlain",1999
+"162","L. Yanacocha, shore","JunnPln_L.Yncc,s1",-76.03633333,-10.83333333,"JuninPlain",1999
+"163","L. Yanacocha, shore","JunnPln_L.Yncc,s4",-76.03633333,-10.83333333,"JuninPlain",1999
+"164","Yanacocha 2, inflow stream","JunnPln_Yncc2,is",-75.983381,-10.857164,"JuninPlain",1999
+"165","Yanacocha 4, outlet channel","JunnPln_Yncc4,oc",-75.999803,-10.871606,"JuninPlain",1999
+"166","Yanacocha 1, wetland","JunnPln_Yncch1,w",-75.985734,-10.856508,"JuninPlain",1999
+"167","Yanacocha 3, spring","JunnPln_Yncch3,s1",-75.97228,-10.85552,"JuninPlain",1999
+"168","Yanacocha 3, spring","JunnPln_Yncch3,s2",-75.97228,-10.85552,"JuninPlain",1999
+"169","Dos Chorreras","Sml-McE_ChrrrsLk",-79.159722,-2.770278,"Ecuador-Andean",2015
+"170","Fondococha","Sml-McE_FondCoch",-79.23645,-2.760216667,"Ecuador-Andean",2014
+"171","Lagunas de Napalé ","Sml-McE_LgnsdNpl",-79.29671667,-2.887233333,"Ecuador-Andean",2014
+"172","Llaviucu","Sml-McE_Llaviacu",-79.14608333,-2.842933333,"Ecuador-Andean",2014
+"173","Patoquinuas","Sml-McE_Patoquns",-79.20941,-2.781923,"Ecuador-Andean",2014
+"174","Toreadora","Sml-McE_Toreador",-79.22351667,-2.779866667,"Ecuador-Andean",2014
+"175","Titicaca-lake","Titicac_Ttcc-l-1a",-69.1467,-16.22201667,"Titicaca-lake",1996
+"176","Titicaca-lake","Titicac_Ttcc-l-34",-69.43885,-15.95745,"Titicaca-lake",1998
+"177","Titicaca-lake","Titicac_Ttcc-l-35",-69.70195,-15.8065,"Titicaca-lake",1998
+"178","Titicaca-lake","Titicac_Ttcc-l-3a",-69.21098333,-15.2586,"Titicaca-lake",1996
+"179","Titicaca-lake","Titicac_Ttcc-l-3b",-69.21098333,-15.2586,"Titicaca-lake",1996
+"180","Titicaca-lake","Titicac_Ttcc-l-4b",-69.61886667,-15.53176667,"Titicaca-lake",1996
+"181","Titicaca-lake","Titicac_Ttcc-l-5a",-69.068,-15.37446667,"Titicaca-lake",1996
+"182","Titicaca-lake","Titicac_Ttcc-l-5b",-69.068,-15.37446667,"Titicaca-lake",1996
+"183","Titicaca-lake","Titicac_Ttcc-l-6",-69.75473333,-15.8265,"Titicaca-lake",1996
+"184","Titicaca-lake","Titicac_Ttcc-l-8a",-69.32006667,-16.04348333,"Titicaca-lake",1996
+"185","Titicaca-lake","Titicac_Ttcc-l-8b",-69.32006667,-16.04348333,"Titicaca-lake",1996
+"186","Ballivian","Vldr-SL_Ballivin",-68.08333333,-21.63333333,"Sud Lipez",2002
+"187","Cachi","Vldr-SL_Cachi",-67.95,-21.71666667,"Sud Lipez",2002
+"188","Laguna Canapa","Vldr-SL_Canapa",-68.01035,-21.50515,"Sud Lipez",2002
+"189","Chiar Kkota","Vldr-SL_ChiarKkt",-68.06666667,-21.58333333,"Sud Lipez",2002
+"190","Chulluncani","Vldr-SL_Chullncn1",-67.88333333,-21.53333333,"Sud Lipez",2002
+"191","Chulluncani","Vldr-SL_Chullncn2",-67.88333333,-21.53333333,"Sud Lipez",2002
+"192","Laguna Hedionda","Vldr-SL_Hedionda",-68.06666667,-21.56666667,"Sud Lipez",2002
+"193","Honda","Vldr-SL_Honda",-68.06666667,-21.61666667,"Sud Lipez",2002
+"194","Laguna Colorada","Vldr-SL_LagnClrd1",-67.78333333,-22.18333333,"Sud Lipez",2002
+"195","Laguna Colorada","Vldr-SL_LagnClrd2",-67.78333333,-22.18333333,"Sud Lipez",2002
+"196","Laguna Verde","Vldr-SL_LagunVrd",-67.8,-22.8,"Sud Lipez",2002
+"197","Pastos Grandes","Vldr-SL_PstsGrnd1",-67.78333333,-21.65,"Sud Lipez",2002
+"198","Pastos Grandes","Vldr-SL_PstsGrnd10",-67.78333333,-21.65,"Sud Lipez",2002
+"199","Pastos Grandes","Vldr-SL_PstsGrnd11",-67.78333333,-21.65,"Sud Lipez",2002
+"200","Pastos Grandes","Vldr-SL_PstsGrnd12",-67.78333333,-21.65,"Sud Lipez",2002
+"201","Pastos Grandes","Vldr-SL_PstsGrnd13",-67.78333333,-21.65,"Sud Lipez",2002
+"202","Pastos Grandes","Vldr-SL_PstsGrnd14",-67.78333333,-21.65,"Sud Lipez",2002
+"203","Pastos Grandes","Vldr-SL_PstsGrnd15",-67.78333333,-21.65,"Sud Lipez",2002
+"204","Pastos Grandes","Vldr-SL_PstsGrnd16",-67.78333333,-21.65,"Sud Lipez",2002
+"205","Pastos Grandes","Vldr-SL_PstsGrnd2",-67.78333333,-21.65,"Sud Lipez",2002
+"206","Pastos Grandes","Vldr-SL_PstsGrnd3",-67.78333333,-21.65,"Sud Lipez",2002
+"207","Pastos Grandes","Vldr-SL_PstsGrnd4",-67.78333333,-21.65,"Sud Lipez",2002
+"208","Pastos Grandes","Vldr-SL_PstsGrnd5",-67.78333333,-21.65,"Sud Lipez",2002
+"209","Pastos Grandes","Vldr-SL_PstsGrnd6",-67.78333333,-21.65,"Sud Lipez",2002
+"210","Pastos Grandes","Vldr-SL_PstsGrnd7",-67.78333333,-21.65,"Sud Lipez",2002
+"211","Pastos Grandes","Vldr-SL_PstsGrnd8",-67.78333333,-21.65,"Sud Lipez",2002
+"212","Pastos Grandes","Vldr-SL_PstsGrnd9",-67.78333333,-21.65,"Sud Lipez",2002
+"213","Pujio","Vldr-SL_Pujio",-68.06666667,-21.61666667,"Sud Lipez",2002
+"214","Puripica","Vldr-SL_Puripica",-67.5,-22.51666667,"Sud Lipez",2002
+"215","Laguna Ramaditas","Vldr-SL_Ramadits",-68.078817,-21.643133,"Sud Lipez",2002
