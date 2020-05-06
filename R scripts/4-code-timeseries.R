@@ -1,9 +1,3 @@
-#clear workspace
-rm(list=ls(all=TRUE))
-dev.off()
-#unload all loaded packages
-pacman::p_unload(pacman::p_loaded(), character.only = TRUE)
-
 #load libraries for functions used
 library(tidyverse)
 library(ggplot2)

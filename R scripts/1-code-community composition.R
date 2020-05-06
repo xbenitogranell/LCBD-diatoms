@@ -4,6 +4,7 @@ library(cluster)
 library(tidyverse)
 
 ## Read in data
+# lakes_predictors from
 lake_predictors <- read.csv("results/lakes_predictors.csv", row.names=1) %>%
   filter(!str_detect(region, "Chile-Coastal")) %>%
   mutate(region=str_replace(region,"Cusco","Peruvian Andes-Cusco")) %>%
@@ -59,7 +60,7 @@ new <- df_thin %>%
 
 levels(new$region)
 
-# comment spp when analyzing ecological groups data
+# select our outlier samples with high planktic spp abundance
 new <- new %>%
   filter(Fragilaria.crotonensis < 40) %>%
   filter(Cyclostephanos.tholiformis < 40) %>%
@@ -74,9 +75,7 @@ env_surf <- merge(training,environmental_data_lakes, by="row.names")
 
 #For extracting spp from trainingset
 training2 <- env_surf[,2:235]
-
 rowSums(training2)
-#write.csv(training2, "results/diatoms2.csv")
 
 #For extracting environmental variables from diatom training set
 env_data_lakes <- env_surf[,236:ncol(env_surf)]
@@ -275,7 +274,7 @@ library(cowplot)
 plt <- plot_grid(cluster_map_plt,comp_plot, align="hv", axis="t", ncol = 2,
                  rel_widths = c(1,1),labels = "auto")
 plt
-ggsave("figures/study_region_groups_NEW.eps", plt, height = 8, width = 10)
+ggsave("figures/Fig1 LCBD.png", plt, height = 8, width = 10)
 
 #plot modern lake database 
 #read abiotic variables (Antonelli et al 2018 Nature Geosciences)

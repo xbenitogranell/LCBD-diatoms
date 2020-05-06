@@ -17,7 +17,6 @@ lake_predictors <- read.csv("results/lakes_predictors.csv", row.names=1) %>%
   mutate(region=str_replace(region, "Peru-Andean eastern", "Peruvian Andes")) %>%
   mutate(region=str_replace(region, "Peru-Andean Puna", "Peruvian Andes"))
 
-chile_coastal <- paste(c("Chl-Crr_Aculeo","Chl-Crr_Batuco","Chl-Crr_CingsdNm", "Chl-Crr_LgnAlbfr"), collapse = '|')
 diatoms <- read.csv("results/diatoms.csv") %>%
   filter(!str_detect(X, chile_coastal))
 
@@ -54,6 +53,7 @@ vifstep(data_transf_red, th=10)
 
 
 ### GAM Models
+## LCBD indices come from R script 2-code-LCBD
 LCBD_data <- read.csv("results/div_predictors.csv") %>%
   filter(!str_detect(region, "Chile-Coastal")) %>%
   dplyr::select(LCBD, LCBDrepl, LCBDrich) %>%
@@ -155,27 +155,6 @@ mod3 <- gam(LCBDrich ~ s(Latitude, Longitude) + s(region_f, bs="re") +
 
 summary(mod3)
 
-#Check spatial autocorrelation of model residuals
-# my.coord <- coordinates(coord)
-# 
-# #no duplicate rows
-# my.coord.nd <- my.coord[!duplicated(my.coord), ]
-# 
-# duplicated(my.coord)
-# sel <- c(113)
-# 
-# 
-# model1.res2 <- as.matrix(model1.res)
-# model1.res2 <- model1.res[-sel,]
-# 
-# coord.nb <- tri2nb(my.coord.nd, row.names = NULL)
-# my.coord.listw <- nb2listw (coord.nb, glist=NULL, style="W",
-#                             zero.policy=FALSE)
-# 
-# 
-# moran.test(as.vector(model1.res2), my.coord.listw)
-
-
 #### Summary of models
 ## Pierre's idea!!
 
@@ -184,10 +163,6 @@ modPred_res <-as.data.frame(rbind(
   round(summary(mod2)$p.table, digits=4)[-1,],
   round(summary(mod3)$p.table, digits=4)[-1,]))
   
-
-# modPred_res$predictor<- rep(c("grid_bio1", "grid_bio7", "grid_bio12", "grid_bio15", "Ruggedeness", "Erosion", "Relief", 
-#                               "Historical Human Density", "Historic cropland", "Water T", "pH", "Conductivity", "TP"))
-#modPred_res$predictor <- rownames(modPred_res)[1:15] 
 modPred_res$predictor <- rep(c("MAP", "T.season", "P.season", "Ruggedness", "Soil type", "Lake area", "Historical human density",
                               "Historical cropland area","Water T", "pH", "Conductivity", "TP", "Chloride", "Sodium"))
 modPred_res$expl.var <- rep(c("LCBD", "LCBDrepl", "LCBDrich"), each=14)
