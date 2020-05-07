@@ -126,8 +126,8 @@ names(coresLCB) <- names(coresList)
 par(mfrow=c(3,3))
 #par(mar=c(2,2,2,2))
 for (i in 1:length(coresLCB)) {
-  plot(coresLCB[[i]][,c(11,8)], main=names(coresLCB[i]),
-       xlab="species richness", ylab="LCBDrich")
+  plot(coresLCB[[i]][,c("speciesrichness","LCBD")], main=names(coresLCB[i]),
+       xlab="species richness", ylab="LCBD")
 }
 
 ## correlate LCBD and richness for each core
@@ -200,12 +200,25 @@ LCBD_ts_data <- plyr::ldply(coresLCB, data.frame) %>%
   mutate(lake_f=as.factor(lake))
   
 cols <- c("LCBDrepl"="#f04546","LCBDrich"="#3591d1")
-#cols <- c("LCBDrepl"="#f04546","LCBDrich"="#3591d1", "speciesrichness"="grey")
+
+### read South America hydroclimate records
+pumacocha <- read.csv("data/SouthAmerica_hydroclimate_records.csv", row.names = 1) %>%
+  filter(core %in% c("pumacocha")) %>% filter(!d13C==-9999.00)
+
+plt_pumac <- ggplot(pumacocha) + geom_line(aes(age_calBP, d18O)) + 
+  #scale_color_manual(values =c("#88101A", "#DB291A")) +
+  theme_classic() + xlim(c(0,2000)) +
+  theme(axis.title.y = element_text(size=9),
+        plot.margin = unit(c(0,1.7,0,0.6),"cm")) +
+  theme(legend.position = "none") +
+  ggtitle("Pumacocha") +
+  xlab("Cal years BP") +
+  ylab(expression(paste (delta^18, "O \u2030")))
+plt_pumac
 
 ## plot the data
 #create a scaling factor to apply to the second y axis
 scaleFactor <- max(LCBD_ts_data$LCBDrepl) / max(LCBD_ts_data$LCBDrich)
-#scaleFactor <- max(LCBD_ts_data$LCBDrepl) / max(LCBD_ts_data$speciesrichness)
 
 beta_plt <- ggplot(LCBD_ts_data) +
   geom_line(aes(x=upper_age, y=LCBDrepl, colour="LCBDrepl")) +
@@ -214,12 +227,19 @@ beta_plt <- ggplot(LCBD_ts_data) +
   facet_wrap(factor(lake,levels=c("Piñan", "Yahuarcocha", "Fondococha", "Llaviucu",
                                      "Umayo", "Titicaca")) ~ ., ncol = 1, scales="free_y") +
   theme_classic() +
+  theme(axis.title.x=element_blank(),
+        axis.text.x=element_blank(),
+        axis.ticks.x = element_blank())+
   scale_colour_manual(name="",values=cols) +
   ylab("") + xlab("Cal years BP") +
   theme(legend.position = "top")
 beta_plt
 
-ggsave("figures/LCBDtimeseries_new.png", beta_plt, height = 8, width = 10)
+# create a composite time series plot for LCBD and paleoclimatic record
+plt <- plot_grid(beta_plt, plt_pumac, rel_heights = c(4,1), ncol=1)
+plt
+
+ggsave("figures/LCBDtimeseries_paleoclimate.png", plt, height = 8, width = 10)
 
 
 ##plot LCBDrepl LCBD rich
@@ -237,9 +257,6 @@ ggsave("figures/LCBDrepl_rich.png", LCBDrepl_rich, height = 8, width = 10)
 library(mgcv)
 library(gratia)
 library(cowplot)
-
-#LCBD_ts_data_ecuador <- LCBD_ts_data %>% filter(lake_f==c("yahuarcocha", "llaviucu", "fondococha", "pinan"))
-# LCBD_ts_data_altiplano <- LCBD_ts_data %>% filter(lake_f==c("titicaca", "umayo"))
 
 set.seed(10) #set a seed so this is repeatable
 
