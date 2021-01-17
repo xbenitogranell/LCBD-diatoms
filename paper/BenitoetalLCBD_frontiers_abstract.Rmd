@@ -39,8 +39,8 @@ knitr::include_graphics("../figures/Fig1_LCBD.png")
 knitr::include_graphics("../figures/gamLCBD_modplot_DEF.png")
 ```
 
-```{r echo=FALSE, fig.cap="Contribution of replacement (LCBDrepl) and richness (LCBDrich) components to beta diversity for the six investigated lake cores (arranged by increased latitude)", out.width = '100%'}
-knitr::include_graphics("../figures/LCBDtimeseries_new.png")
+```{r echo=FALSE, fig.cap="Contribution of replacement (LCBDrepl) and richness (LCBDrich) components to beta diversity for the six investigated lake cores (arranged by increased latitude). Isotopic δ18O measurements from Pumacocha lake (Bird et al., 2011) are interpreted as dry periods with enriched values", out.width = '100%'}
+knitr::include_graphics("../figures/LCBDtimeseries_paleoclimate.png")
 ```
 
 ```{r echo=FALSE, fig.cap="Temporal trends of Hierarchical GAM-fitted beta replacement for the six Andean lakes investigated in this study (arranged by increased latitude). Model GS (green line) indicates a global curve and inter-lake variation having similar smoothness. Model GI (orange line) indicates a global curve allowing for varied smoothness among lakes"}

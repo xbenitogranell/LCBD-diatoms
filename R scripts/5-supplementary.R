@@ -26,7 +26,7 @@ kable(sites) %>%
 
 
 #### Stratigraphic plots
-mergedCores <- read.csv("mergedCores_counts4.csv")[,-1] 
+mergedCores <- read.csv("data/mergedCores_counts4.csv")[,-1] 
 diatoms_save <- mergedCores #save dataframe
 
 #Gather
@@ -35,7 +35,7 @@ spp_thin <- diatoms_save %>%
 
 
 #import dataframe wiht old and new names to group
-changes <- read.csv("old_new_nms_cores_counts.csv", stringsAsFactors = FALSE)
+changes <- read.csv("data/old_new_nms_cores_counts.csv", stringsAsFactors = FALSE)
 #new1: ecological groups
 #new2: harmonized taxonomic names
 
@@ -76,7 +76,7 @@ core_lake <- spp_long %>%
 core_common_taxa <- core_lake %>%
   group_by(taxa) %>%
   summarise(max_rel_abund = max(relative_abundance_percent)) %>%
-  filter(max_rel_abund >= 3) %>%
+  filter(max_rel_abund >= 6) %>%
   arrange(max_rel_abund) %>%
   pull(taxa)
 
@@ -112,3 +112,11 @@ Stratiplot(
   col = "black")
 
 dev.off()  
+
+## plot relative abundances time series
+core_counts_long <- core_counts_common %>%
+  dplyr::select(depth, lake, upper_age, taxa, relative_abundance_percent) 
+
+plot <- ggplot(data=core_counts_long, aes(x=upper_age, y=relative_abundance_percent, colour=taxa)) +
+  geom_line() +
+plot
