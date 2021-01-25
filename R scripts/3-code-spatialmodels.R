@@ -185,6 +185,7 @@ modPred_res$predictor <- factor(modPred_res$predictor,
 
 #write.csv(modPred_res, file="results/modPred_results_gamLCBD.csv")
 
+# Plot Figure 2
 pltLCBD <- ggplot(modPred_res, aes(x=predictor, y=coefficient, col=sig))+
   geom_pointrange(aes(ymin=coefficient-(1.96*SE), ymax=coefficient+(1.96*SE)))+
   geom_hline(yintercept = 0, linetype=2)+
@@ -195,7 +196,7 @@ pltLCBD <- ggplot(modPred_res, aes(x=predictor, y=coefficient, col=sig))+
   theme(axis.text.x=element_text(angle=60, hjust=1), axis.title.x=element_blank())
 pltLCBD
 
-ggsave("figures/gamLCBD_modplot_DEF.png", plot=pltLCBD, height=8, width=10,units="in",
+ggsave("figures/Fig2_gamLCBD_modplot.png", plot=pltLCBD, height=8, width=10,units="in",
        dpi = 400)
 
 

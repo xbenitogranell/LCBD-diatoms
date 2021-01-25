@@ -235,11 +235,11 @@ beta_plt <- ggplot(LCBD_ts_data) +
   theme(legend.position = "top")
 beta_plt
 
-# create a composite time series plot for LCBD and paleoclimatic record
+# create a composite time series plot for LCBD and paleoclimatic record (Figure 3)
 plt <- plot_grid(beta_plt, plt_pumac, rel_heights = c(4,1), ncol=1)
 plt
 
-ggsave("figures/LCBDtimeseries_paleoclimate.png", plt, height = 8, width = 10)
+ggsave("figures/Fig3_LCBDtimeseries_paleoclimate.png", plt, height = 8, width = 10)
 
 
 ##plot LCBDrepl LCBD rich
@@ -335,7 +335,7 @@ lake_plot_data <- mutate(lake_plot_data, se=c(as.numeric(lake_modGS_fit$se.fit),
 plot_model_labels <- paste("Model", c("GS", "GI"))
 plot_model_labels <- factor(plot_model_labels, levels = plot_model_labels)
 
-#Plot
+#Plot Figure 4
 theme_set(theme_bw())
 theme_update(panel.grid = element_blank())
 
@@ -357,7 +357,7 @@ lake_plot <- ggplot(lake_plot_data)+
   
 lake_plot
 
-ggsave("figures/HGAM_betarepl_GS_GI_new.png", lake_plot, height = 8, width = 10)
+ggsave("figures/Fig4_HGAM_betarepl_GS_GI.png", lake_plot, height = 8, width = 10)
 
 
 
@@ -413,77 +413,6 @@ write.csv(lake_predictive_summary, "results/HGAM_repl_GS_GI.csv")
 write.csv(lake_predictive_summary, "results/HGAM_rich_GS_GI.csv")
 write.csv(lake_predictive_summary, "results/HGAM_LCBDrepl_GS_GI.csv")
 write.csv(lake_predictive_summary, "results/HGAM_LCBDrich_GS_GI.csv")
-
-
-library(maps)
-world <- map_data("world")
-southamerica <- ggplot() +
-  geom_polygon(data = world, aes(x=long, y = lat, group = group), fill="lightgrey") +
-  theme(legend.position = "right")+
-  coord_map("albers", parameters = c(-100, -100),  ylim=c(-40,15), xlim=c(-82,-40)) +
-  #coord_map("albers", parameters = c(-100, -100),  ylim=c(-10,15), xlim=c(-82,-60)) +
-  xlab("Longitude") + ylab("Latitude") +
-  theme_bw()
-
-southamerica_map <- map_data("world")%>%
-  transmute(Longitude= long, Latitude = lat)
-
-SA_map <- map_data('worldHires', c('Ecuador', 'Colombia', 'Peru', 'Bolivia', 'Chile')) %>%
-  transmute(Longitude=long, Latitude=lat)
-
-source("code_snippets/quantile_resid.R")
-#LCBD_ts_data_ecuador$base_resid <- rqresiduals(LCBD_base_model)
-# ggplot(aes(Longitude, Latitude),
-#        data= LCBD_ts_data %>% filter(upper_age%%40==0))+ #only look at every 6th year
-#   geom_point(aes(color=base_resid))+
-#   geom_polygon(data=southamerica_map,fill=NA, col="black")+
-#   scale_color_viridis()+
-#   facet_wrap(~upper_age)+
-#   theme_bw()
-
-#Model space and time jointly
-LCBD_ti_model <- gam(repl~ s(Longitude,Latitude,k=4) + s(upper_age) + 
-                          ti(Longitude, Latitude, upper_age, d=c(2,1), k=4), weights = elapsedTime / mean(elapsedTime),
-                        data=LCBD_ts_data,family=gaussian,method="REML")
-
-layout(matrix(1:2,ncol=2))
-plot(LCBD_ti_model,scheme=2)
-summary(LCBD_ti_model)
-
-#compare the two models
-anova(LCBD_base_model,LCBD_ti_model,test = "Chisq")
-
-
-#First we'll create gridded data
-predict_LCBD <- expand.grid(
-  Latitude= seq(min(LCBD_ts_data$Latitude), 
-                max(LCBD_ts_data$Latitude),
-                length=50),
-  Longitude = seq(min(LCBD_ts_data$Longitude),
-                  max(LCBD_ts_data$Longitude),
-                  length=50),
-  upper_age = round(seq(min(LCBD_ts_data$upper_age),
-               max(LCBD_ts_data$upper_age),
-               length.out = 40),digits = 0)
-)
-
-
-# This now selects only that data that falls within Florida's border
-predict_LCBD <- predict_LCBD[with(predict_LCBD,
-                                       inSide(Ecuador_map, Latitude,Longitude)),]
-
-predict_LCBD$model_fit <- predict(LCBD_ti_model,
-                                 predict_LCBD,type = "response") 
-
-predict_LCBD2 <- lake_cores2 %>% right_join(predict_LCBD)
-
-ggplot(aes(Longitude,Latitude, fill=model_fit), data=predict_LCBD)+
-  geom_tile()+
-  #geom_point(aes(x=Longitude, y=Latitude), data=lake_cores2, shape=18, size=3)+
-  geom_point(aes(x=-79.14600, y=-2.8429000), colour="red") +
-  facet_wrap(~upper_age,nrow=4)+
-  scale_fill_viridis("LCBDrepl")+
-  theme_bw(10)
 
 
 
