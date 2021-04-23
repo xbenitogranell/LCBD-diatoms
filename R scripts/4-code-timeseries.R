@@ -261,7 +261,7 @@ library(cowplot)
 set.seed(10) #set a seed so this is repeatable
 
 # model GI HGAM: a global smooth plus group-level smoothers with different smootheness for each taxa
-model_gam_GI <- gam(LCBD ~ s(upper_age, bs="fs") +
+model_gam_GI <- gam(LCBD ~ s(upper_age) +
                     s(upper_age, by=lake_f, bs="fs"),
                     weights = elapsedTime / mean(elapsedTime),family=Gamma(link ="log"),
                     data=LCBD_ts_data, method="REML")
@@ -270,7 +270,7 @@ gam.check(model_gam_GI)
 draw(model_gam_GI)
 
 # #model GS HGAM: a global smooth plus group-level smoothers having the same wigliness 
-model_gam_GS <- gam(LCBD ~ s(upper_age, bs="fs") +
+model_gam_GS <- gam(LCBD ~ s(upper_age) +
                      s(upper_age, lake_f, bs="fs"),
                      weights = elapsedTime / mean(elapsedTime),family=Gamma(link = "log"),
                      data=LCBD_ts_data, method="REML")
